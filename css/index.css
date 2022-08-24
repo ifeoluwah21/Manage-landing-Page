@@ -25,18 +25,6 @@ main {
   margin-inline: auto;
 }
 
-.tablet {
-  display: none;
-  position: absolute;
-  top: -2%;
-  left: 15%;
-  width: 100%;
-  z-index: -1;
-}
-.tablet img {
-  width: 100%;
-}
-
 .header {
   background-color: transparent;
 }
@@ -75,7 +63,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 .header__menu-btn {
   display: block;
@@ -89,8 +77,24 @@ main {
   padding: 1rem 0;
   margin-inline: auto;
 }
+.hero__illustration-container::after {
+  position: absolute;
+  content: "";
+  top: -1%;
+  right: 0;
+  z-index: -1;
+  background-image: url(../images/bg-tablet-pattern.svg);
+  width: 75%;
+  aspect-ratio: 1/1.5;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  max-height: 85vh;
+}
 .hero__illustration-container img {
   width: 100%;
+}
+.hero__info {
+  position: relative;
 }
 .hero__title {
   text-align: center;
