@@ -67,16 +67,22 @@ main {
     margin-inline: auto;
     background: #ffffff;
     padding: 2rem;
-    & a {
-      text-decoration: none;
-      color: $dark-blue;
-      font-weight: 600;
-    }
   }
   &__item {
     text-align: center;
     padding: 0.5rem 1.5rem;
     list-style: none;
+    &:hover a {
+      color: $dark-grayish-blue;
+    }
+    & a {
+      @include font-family;
+      text-decoration: none;
+      color: $dark-blue;
+      font-weight: 600;
+
+      transition: all 0.3s ease-in;
+    }
   }
 
   &__wrapper {
@@ -152,6 +158,7 @@ main {
   transform: translateX(-50%);
   margin: 1rem 0;
   border-radius: 20px;
+  transition: all 0.3s ease-in;
   &--static {
     transform: none;
     position: static;
@@ -161,10 +168,17 @@ main {
     color: $very-light-gray;
     background-color: $bright-red;
     box-shadow: 1px 1px 9px -1px $bright-red;
+
+    &:hover {
+      background-color: $very-pale-red-btn;
+    }
   }
   &--white {
     color: $bright-red;
     background-color: $very-light-gray;
+    &:hover {
+      color: $very-pale-red;
+    }
   }
 }
 
@@ -329,9 +343,13 @@ main {
   &__item {
     list-style: none;
     padding: 0.5rem 2rem;
+    &:hover a {
+      color: $bright-red;
+    }
     & a {
       text-decoration: none;
       color: $dark-grayish-blue;
+      transition: all 0.3s ease-in;
     }
   }
   &__company-logo {
@@ -353,6 +371,10 @@ main {
     width: 70%;
     border-radius: 20px;
     border: none;
+    &--red {
+      color: $bright-red;
+      border: 2px solid red;
+    }
   }
   &__btn {
     width: 25%;
@@ -362,6 +384,10 @@ main {
     font-size: 1rem;
     color: #ffffff;
     background-color: $bright-red;
+    transition: all 0.3s ease-in;
+    &:hover {
+      background-color: $very-pale-red-btn;
+    }
   }
 }
 
@@ -372,7 +398,13 @@ main {
     list-style: none;
     & a {
       width: 100%;
+      font-size: 30px;
+      color: #ffffff;
       display: inline-block;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: $bright-red;
+      }
       & img {
         width: 100%;
       }
@@ -437,6 +469,10 @@ main {
       padding: 0;
       margin-inline: 0;
       order: 2;
+      &::after {
+        width: 50%;
+        max-height: 85vh;
+      }
     }
     &__info {
       width: 40%;

@@ -3,9 +3,10 @@ $dark-blue: hsl(228, 39%, 23%);
 $dark-grayish-blue: hsl(227, 12%, 61%);
 $very-dark-blue: hsl(233, 12%, 13%);
 $very-pale-red: hsl(13, 100%, 96%);
+$very-pale-red-btn: hsl(12, 91%, 69%);
 $very-light-gray: hsl(0, 0%, 98%);
 
-%font-family {
+@mixin font-family {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
