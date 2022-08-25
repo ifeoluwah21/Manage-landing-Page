@@ -240,6 +240,7 @@ main {
 }
 .card__info {
   padding: 4rem 0;
+  min-height: 310px;
   background-color: hsl(0deg, 0%, 98%);
 }
 .card__cite {
@@ -387,11 +388,43 @@ main {
   display: none;
 }
 
+.carousel {
+  position: relative;
+  height: 75vh;
+}
+.carousel__item {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-size: 2rem;
+  padding: 0.5rem;
+  color: rgba(242, 95, 58, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 1rem;
+  cursor: pointer;
+}
+.carousel__btn[data-btn-right] {
+  right: 0;
+}
+.carousel__btn[data-btn-left] {
+  left: 0;
+}
+
 @media screen and (min-width: 1023px) {
   .btn {
     position: static;
     transform: none;
     font-size: 1.2rem;
+  }
+  .btn--center {
+    position: relative;
+    transform: translateX(-50%);
   }
   a {
     font-size: 1.2rem;
@@ -543,6 +576,31 @@ main {
   }
   .form__input {
     font-size: 1rem;
+  }
+  .carousel {
+    position: relative;
+    margin: 3rem 0;
+    overflow-x: hidden;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .carousel__item {
+    margin-right: 30px;
+    position: static;
+    transform: none;
+  }
+  .carousel__wrapper {
+    display: grid;
+    grid-template-columns: max-content;
+    overflow-x: scroll;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+  }
+  .carousel__btn {
+    display: none;
+  }
+  .dot-box {
+    display: none;
   }
 }
 
