@@ -92,57 +92,66 @@
     </div>
     <section class="testimonies">
       <h2 class="testimonies__title">What they've said</h2>
-      <div id="review-1" class="card">
-        <div class="card__avatar">
-          <img src="./images/avatar-ali.png" alt="avatar-ali">
-        </div>
-        <div class="card__info">
-          <h3 class="card__cite"><cite>Ali Bravo</cite></h3>
-          <blockquote class="card__quote">"We have been able to cancel so many other subscriptions since using Manage.
-            There is no more
-            cross-channel confusion and everyone is much more focused."</blockquote>
-        </div>
-      </div>
-      <div id="review-2" class="card">
-        <div class="card__avatar">
-          <img src="./images/avatar-ali.png" alt="avatar-ali">
-        </div>
-        <div class="card__info">
-          <h3 class="card__cite"><cite>Ali Bravo</cite></h3>
-          <blockquote class="card__quote">"We have been able to cancel so many other subscriptions since using Manage.
-            There is no more
-            cross-channel confusion and everyone is much more focused"</blockquote>
-        </div>
-      </div>
-      <div id="review-3" class="card">
-        <div class="card__avatar">
-          <img src="./images/avatar-ali.png" alt="avatar-ali">
-        </div>
-        <div class="card__info">
-          <h3 class="card__cite"><cite>Ali Bravo</cite></h3>
-          <blockquote class="card__quote">"We have been able to cancel so many other subscriptions since using Manage.
-            There is no more
-            cross-channel confusion and everyone is much more focused"</blockquote>
-        </div>
-      </div>
-      <div id="review-4" class="card">
-        <div class="card__avatar">
-          <img src="./images/avatar-ali.png" alt="avatar-ali">
-        </div>
-        <div class="card__info">
-          <h3 class="card__cite"><cite>Ali Bravo</cite></h3>
-          <blockquote class="card__quote">"We have been able to cancel so many other subscriptions since using Manage.
-            There is no more
-            cross-channel confusion and everyone is much more focused"</blockquote>
+      <div class="carousel">
+        <div class="carousel__wrapper">
+          <div id="review-1" data-m-selected="true" data-index="0" data-cite="anisha" class="card carousel__item">
+            <div class="card__avatar">
+              <img src="./images/avatar-anisha.png" alt="avatar-anisha">
+            </div>
+            <div class="card__info">
+              <h3 class="card__cite"><cite>Anisha Li</cite></h3>
+              <blockquote class="card__quote">"WManage has supercharged our team's milestones at all times keeps
+                everyone
+                motivated."</blockquote>
+            </div>
+          </div>
+          <div id="review-2" data-m-selected="false" data-index="1" data-cite="ali" class="card carousel__item">
+            <div class="card__avatar">
+              <img src="./images/avatar-ali.png" alt="avatar-ali">
+            </div>
+            <div class="card__info">
+              <h3 class="card__cite"><cite>Ali Bravo</cite></h3>
+              <blockquote class="card__quote">"We have been able to cancel so many other subscriptions since using
+                Manage.
+                There is no more
+                cross-channel confusion and everyone is much more focused"</blockquote>
+            </div>
+          </div>
+          <div id="review-3" data-m-selected="false" data-index="2" data-cite="watts" class="card carousel__item">
+            <div class="card__avatar">
+              <img src="./images/avatar-richard.png" alt="avatar-richard">
+            </div>
+            <div class="card__info">
+              <h3 class="card__cite"><cite>Richard Watts</cite></h3>
+              <blockquote class="card__quote">"Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can't stop recommending them to everyone I talk to!"</blockquote>
+            </div>
+          </div>
+          <div id="review-4" data-m-selected="false" data-index="3" data-cite="shanai" class="card carousel__item">
+            <div class="card__avatar">
+              <img src="./images/avatar-shanai.png" alt="avatar-shanai">
+            </div>
+            <div class="card__info">
+              <h3 class="card__cite"><cite>Shanai Gough</cite></h3>
+              <blockquote class="card__quote">"Their software allows us to track, manage and collaborate on our projects
+                from anywhere. It keeps the whole team in-sync without being intrusive."</blockquote>
+            </div>
+          </div>
+          <span class="carousel__btn" data-btn-right>&rArr;</span>
+          <span class="carousel__btn" data-btn-left>&lArr;</span>
         </div>
       </div>
       <nav class="dot-box" role="navigation" aria-label="testimonies navigation">
-        <span role="button" aria-controls="review-1" aria-selected="true" class="dot"></span>
-        <span role="button" aria-controls="review-2" aria-selected="false" class="dot"></span>
-        <span role="button" aria-controls="review-3" aria-selected="false" class="dot"></span>
-        <span role="button" aria-controls="review-4" aria-selected="false" class="dot"></span>
+        <span role="button" aria-controls="review-1" aria-selected="true" data-ref="anisha" data-index="0"
+          data-selected="true" class="dot"></span>
+        <span role="button" aria-controls="review-2" aria-selected="false" data-ref="ali" data-index="1"
+          data-selected="false" class="dot"></span>
+        <span role="button" aria-controls="review-3" aria-selected="false" data-ref="watts" data-index="2"
+          data-selected="false" class="dot"></span>
+        <span role="button" aria-controls="review-4" aria-selected="false" data-ref="shanai" data-index="3"
+          data-selected="false" class="dot"></span>
       </nav>
-      <button class="btn btn--orange" type="button">Get Started</button>
+      <button class="btn btn--center btn--orange" type="button">Get Started</button>
     </section>
     <section class="work">
       <h2 class="work__title">Simplify how your team works today.</h2>
@@ -195,6 +204,7 @@
       <p class="footer__text">Copyright 2020. All Rights Reserved</p>
     </div>
   </footer>
+  <script src="./index.js" defer></script>
 </body>
 
 </html>
