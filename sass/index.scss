@@ -296,9 +296,12 @@ main {
   height: 20px;
   border-radius: 50%;
   border: 2px solid $bright-red;
-  background-color: #ffffff;
-  &[aria-selected="true"] {
+  transition: all 250ms ease-in;
+  &[data-selected="true"] {
     background-color: $bright-red;
+  }
+  &[data-selected="false"] {
+    background-color: #ffffff;
   }
   &-box {
     display: flex;
@@ -430,6 +433,13 @@ main {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    &[data-m-selected="true"] {
+      display: block;
+      animation: fadeSlide 0.5s ease-in;
+    }
+    &[data-m-selected="false"] {
+      display: none;
+    }
   }
   &__btn {
     position: absolute;
@@ -632,7 +642,7 @@ main {
   .carousel {
     position: relative;
     margin: 3rem 0;
-    overflow-x: hidden;
+    overflow: hidden;
     width: 100%;
     justify-content: space-between;
 

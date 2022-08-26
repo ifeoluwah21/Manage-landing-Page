@@ -94,7 +94,7 @@
       <h2 class="testimonies__title">What they've said</h2>
       <div class="carousel">
         <div class="carousel__wrapper">
-          <div id="review-1" class="card carousel__item">
+          <div id="review-1" data-m-selected="true" data-index="0" data-cite="anisha" class="card carousel__item">
             <div class="card__avatar">
               <img src="./images/avatar-anisha.png" alt="avatar-anisha">
             </div>
@@ -105,7 +105,7 @@
                 motivated."</blockquote>
             </div>
           </div>
-          <div id="review-2" class="card carousel__item">
+          <div id="review-2" data-m-selected="false" data-index="1" data-cite="ali" class="card carousel__item">
             <div class="card__avatar">
               <img src="./images/avatar-ali.png" alt="avatar-ali">
             </div>
@@ -117,7 +117,7 @@
                 cross-channel confusion and everyone is much more focused"</blockquote>
             </div>
           </div>
-          <div id="review-3" class="card carousel__item">
+          <div id="review-3" data-m-selected="false" data-index="2" data-cite="watts" class="card carousel__item">
             <div class="card__avatar">
               <img src="./images/avatar-richard.png" alt="avatar-richard">
             </div>
@@ -127,7 +127,7 @@
                 and focused. I can't stop recommending them to everyone I talk to!"</blockquote>
             </div>
           </div>
-          <div id="review-4" class="card carousel__item">
+          <div id="review-4" data-m-selected="false" data-index="3" data-cite="shanai" class="card carousel__item">
             <div class="card__avatar">
               <img src="./images/avatar-shanai.png" alt="avatar-shanai">
             </div>
@@ -142,10 +142,14 @@
         </div>
       </div>
       <nav class="dot-box" role="navigation" aria-label="testimonies navigation">
-        <span role="button" aria-controls="review-1" aria-selected="true" class="dot"></span>
-        <span role="button" aria-controls="review-2" aria-selected="false" class="dot"></span>
-        <span role="button" aria-controls="review-3" aria-selected="false" class="dot"></span>
-        <span role="button" aria-controls="review-4" aria-selected="false" class="dot"></span>
+        <span role="button" aria-controls="review-1" aria-selected="true" data-ref="anisha" data-index="0"
+          data-selected="true" class="dot"></span>
+        <span role="button" aria-controls="review-2" aria-selected="false" data-ref="ali" data-index="1"
+          data-selected="false" class="dot"></span>
+        <span role="button" aria-controls="review-3" aria-selected="false" data-ref="watts" data-index="2"
+          data-selected="false" class="dot"></span>
+        <span role="button" aria-controls="review-4" aria-selected="false" data-ref="shanai" data-index="3"
+          data-selected="false" class="dot"></span>
       </nav>
       <button class="btn btn--center btn--orange" type="button">Get Started</button>
     </section>
@@ -200,7 +204,7 @@
       <p class="footer__text">Copyright 2020. All Rights Reserved</p>
     </div>
   </footer>
-
+  <script src="./index.js" defer></script>
 </body>
 
 </html>

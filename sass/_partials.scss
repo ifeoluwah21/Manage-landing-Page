@@ -15,3 +15,18 @@ $very-light-gray: hsl(0, 0%, 98%);
   padding: 0;
   box-sizing: border-box;
 }
+
+@keyframes fadeSlide {
+  0% {
+    filter: opacity(0);
+  }
+  25% {
+    filter: opacity(0.5);
+  }
+  50% {
+    filter: opacity(0.75);
+  }
+  100% {
+    filter: opacity(1);
+  }
+}
