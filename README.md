@@ -4,17 +4,16 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 
 ## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+- [Frontend Mentor - Manager landing solution](#frontend-mentor---manager-landing-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+  - [Author](#author)
 
 ## Overview
 
@@ -31,12 +30,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/mobile-version.jpeg)
+![](./images/desktop-version.jpeg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/ifeoluwah21/Manage-landing-Page)
+- Live Site URL: [Live Site](https://ifeoluwah21.github.io/Manage-landing-Page/)
 
 ## My process
 
@@ -51,7 +51,6 @@ Users should be able to:
 ### What I learned
 
 Building this project I learnt about making a carousel, removing the default browser styling on scrollbar and more..
-T
 
 ```css
 .slider::webkit-scrollbar {
