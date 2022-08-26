@@ -1,0 +1,80 @@
+* [33mcommit 49b5870a10ed26e62de3b697292b79de788fc19f[m[33m ([m[1;31morigin/master[m[33m)[m
+[31m|[m Author: Ifeoluwah <69403530+ifeoluwah21@users.noreply.github.com>
+[31m|[m Date:   Fri Aug 26 13:38:10 2022 +0100
+[31m|[m 
+[31m|[m     Delete package-lock.json
+[31m|[m 
+* [33mcommit e4316cde75c97aa721936eed7fa1fd26c091268f[m
+[31m|[m Author: Ifeoluwah <69403530+ifeoluwah21@users.noreply.github.com>
+[31m|[m Date:   Fri Aug 26 13:38:01 2022 +0100
+[31m|[m 
+[31m|[m     Delete package.json
+[31m|[m   
+[31m|[m * [33mcommit 516ae0c7726e63091d6c1edd696fd9570b0eb90e[m[33m ([m[1;36mHEAD -> [m[1;32mcarousel[m[33m)[m
+[31m|[m [32m|[m Author: Ifeoluwah <spencerife.21@gmail.com>
+[31m|[m [32m|[m Date:   Fri Aug 26 13:37:22 2022 +0100
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     mobile carousel implemented
+[31m|[m [32m|[m 
+[31m|[m * [33mcommit fa0a8219090eae079eae4bf4335e290fb8054629[m[33m ([m[1;31morigin/carousel[m[33m)[m
+[31m|[m[31m/[m  Author: Ifeoluwah <spencerife.21@gmail.com>
+[31m|[m   Date:   Thu Aug 25 21:39:01 2022 +0100
+[31m|[m   
+[31m|[m       slider for desktop version
+[31m|[m 
+* [33mcommit 634adb3f9e8bc917f968616621b8a72697783744[m[33m ([m[1;32mmaster[m[33m)[m
+[32m|[m Author: Ifeoluwah <spencerife.21@gmail.com>
+[32m|[m Date:   Thu Aug 25 15:30:08 2022 +0100
+[32m|[m 
+[32m|[m     minor fix
+[32m|[m 
+* [33mcommit 9144a9f06dd0539e261c1616583e4fc894628923[m
+[32m|[m Author: Ifeoluwah <spencerife.21@gmail.com>
+[32m|[m Date:   Wed Aug 24 21:24:40 2022 +0100
+[32m|[m 
+[32m|[m     small fix
+[32m|[m 
+* [33mcommit 7cd7744246897f93707743a2bcb3090130893253[m
+[32m|[m Author: Ifeoluwah <spencerife.21@gmail.com>
+[32m|[m Date:   Wed Aug 24 19:16:46 2022 +0100
+[32m|[m 
+[32m|[m     small fix
+[32m|[m 
+* [33mcommit c9d2554fe7e484ffb87f48387d6f6b0935ea634e[m
+[32m|[m Author: Ifeoluwah <spencerife.21@gmail.com>
+[32m|[m Date:   Wed Aug 24 19:11:11 2022 +0100
+[32m|[m 
+[32m|[m     small fix
+[32m|[m   
+*   [33mcommit 20170cb94c0e9076debe2bbdab15d12532653b86[m
+[33m|[m[34m\[m  Merge: b47e4f0 b021af3
+[33m|[m [34m|[m Author: Ifeoluwah <69403530+ifeoluwah21@users.noreply.github.com>
+[33m|[m [34m|[m Date:   Wed Aug 24 20:27:44 2022 +0100
+[33m|[m [34m|[m 
+[33m|[m [34m|[m     Merge pull request #1 from ifeoluwah21/mobile-version
+[33m|[m [34m|[m     
+[33m|[m [34m|[m     Mobile version
+[33m|[m [34m|[m 
+[33m|[m * [33mcommit b021af3ce8859fe246f061a80f15cedb38337dc9[m[33m ([m[1;31morigin/mobile-version[m[33m, [m[1;32mmobile-version[m[33m)[m
+[33m|[m [34m|[m Author: Ifeoluwah <spencerife.21@gmail.com>
+[33m|[m [34m|[m Date:   Wed Aug 24 18:59:25 2022 +0100
+[33m|[m [34m|[m 
+[33m|[m [34m|[m     desktop version
+[33m|[m [34m|[m 
+[33m|[m * [33mcommit b27cae0a1cc9f095bcc08ed97b1b741de653d38d[m
+[33m|[m [34m|[m Author: Ifeoluwah <spencerife.21@gmail.com>
+[33m|[m [34m|[m Date:   Tue Aug 23 19:53:01 2022 +0100
+[33m|[m [34m|[m 
+[33m|[m [34m|[m     mobile version styling
+[33m|[m [34m|[m 
+[33m|[m * [33mcommit d2708ddd88d4451127939f68e5f2022c579a0ec1[m
+[33m|[m[33m/[m  Author: Ifeoluwah <spencerife.21@gmail.com>
+[33m|[m   Date:   Mon Aug 22 21:05:19 2022 +0100
+[33m|[m   
+[33m|[m       initial commit
+[33m|[m 
+* [33mcommit b47e4f0e1c00d4a25a63e4841d694778d87dfe07[m
+  Author: Ifeoluwah <spencerife.21@gmail.com>
+  Date:   Mon Aug 22 21:03:40 2022 +0100
+  
+      initial commit
