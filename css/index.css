@@ -398,6 +398,9 @@ main {
 .form__error-wrapper {
   width: 70%;
 }
+.form__error-wrapper label {
+  display: none;
+}
 .form__input {
   appearance: none;
   padding: 0.5rem 1.5rem;

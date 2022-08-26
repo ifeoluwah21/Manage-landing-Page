@@ -389,6 +389,9 @@ main {
   }
   &__error-wrapper {
     width: 70%;
+    & label {
+      display: none;
+    }
   }
   &__input {
     appearance: none;
