@@ -19,6 +19,14 @@
     filter: opacity(1);
   }
 }
+@keyframes navSlideIn {
+  0% {
+    margin-right: -100%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   background-color: #ffffff;
@@ -43,15 +51,19 @@ main {
   background-color: transparent;
 }
 .header__nav {
-  display: none;
   position: fixed;
+  display: none;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   background-color: rgba(0, 0, 0, 0.3);
   overflow-y: hidden;
+}
+.header__nav[data-visible=true] {
+  display: block;
+  animation: navSlideIn 500ms ease-in-out;
 }
 .header__btn {
   display: none;
@@ -84,8 +96,28 @@ main {
   align-items: center;
   padding: 1rem 0;
 }
+.header__close-btn {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  margin-right: 0;
+}
 .header__menu-btn {
   display: block;
+  padding: 0.5rem;
+}
+.header__menu-btn img {
+  display: inline-block;
+  height: 100%;
+}
+.header__logo-container a {
+  display: inline-block;
+  height: 100%;
+  padding: 0.5rem;
+}
+.header__logo-container a img {
+  display: inline-block;
+  height: 100%;
 }
 
 .hero {
@@ -351,15 +383,31 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+}
+.form__error-msg {
+  max-height: 0;
+  overflow-y: hidden;
+  color: hsl(12deg, 88%, 59%);
+  text-align: center;
+  transition: all 300ms ease-in-out;
+}
+.form__error-msg.show {
+  max-height: 1rem;
+}
+.form__error-wrapper {
+  width: 70%;
 }
 .form__input {
   appearance: none;
   padding: 0.5rem 1.5rem;
-  width: 70%;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
   border-radius: 20px;
   border: none;
 }
-.form__input--red {
+.form__input.error {
   color: hsl(12deg, 88%, 59%);
   border: 2px solid red;
 }
@@ -378,8 +426,7 @@ main {
 }
 
 .social__item {
-  width: 10%;
-  max-width: 40px;
+  padding: 0.5rem;
   list-style: none;
 }
 .social__item a {
@@ -407,7 +454,7 @@ main {
 
 .carousel {
   position: relative;
-  height: 75vh;
+  min-height: 420px;
 }
 .carousel__item {
   position: absolute;
@@ -429,7 +476,7 @@ main {
   font-size: 2rem;
   padding: 0.5rem;
   color: rgba(242, 95, 58, 0.5);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   margin: 1rem;
   cursor: pointer;
 }
@@ -452,6 +499,9 @@ main {
   }
   a {
     font-size: 1.2rem;
+  }
+  .header__close-btn, .header__menu-btn {
+    display: none;
   }
   .header__nav {
     display: block;
@@ -609,9 +659,14 @@ main {
     justify-content: space-between;
   }
   .carousel__item {
-    margin-right: 30px;
     position: static;
     transform: none;
+  }
+  .carousel__item:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  .carousel__item[data-l-selected] {
+    display: block;
   }
   .carousel__wrapper {
     display: grid;
@@ -619,6 +674,12 @@ main {
     overflow-x: scroll;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .carousel__wrapper::-webkit-scrollbar {
+    appearance: none;
+    display: none;
   }
   .carousel__btn {
     display: none;

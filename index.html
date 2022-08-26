@@ -20,9 +20,13 @@
   <header class="header">
     <div class="wrapper header__wrapper">
       <div class="header__logo-container">
-        <img src="./images/logo.svg" alt="Manage">
+        <a href="./index.html">
+          <img src="./images/logo.svg" alt="Manage"></a>
       </div>
-      <nav class="header__nav" aria-hidden="true">
+      <nav class="header__nav" data-visible="" aria-hidden="true">
+        <div class="header__close-btn" role="button" tabindex="0" aria-label="Close Navigation">
+          <img src="./images/icon-close.svg" alt="icon-close">
+        </div>
         <ul class="header__list" role="list">
           <li class="header__item"><a href="">Pricing</a></li>
           <li class="header__item"><a href="">Product</a></li>
@@ -32,7 +36,7 @@
         </ul>
       </nav>
       <button type="button" class="header__btn btn btn--static btn--orange"><span>Get Started</span></button>
-      <div class="header__menu-btn">
+      <div class="header__menu-btn" role="button" tabindex="0" aria-label="Navigation button">
         <img src="./images/icon-hamburger.svg" alt="icon-hamburger">
       </div>
     </div>
@@ -94,7 +98,8 @@
       <h2 class="testimonies__title">What they've said</h2>
       <div class="carousel">
         <div class="carousel__wrapper">
-          <div id="review-1" data-m-selected="true" data-index="0" data-cite="anisha" class="card carousel__item">
+          <div id="review-1" data-l-selected data-m-selected="true" data-index="0" data-cite="anisha"
+            class="card carousel__item">
             <div class="card__avatar">
               <img src="./images/avatar-anisha.png" alt="avatar-anisha">
             </div>
@@ -105,7 +110,8 @@
                 motivated."</blockquote>
             </div>
           </div>
-          <div id="review-2" data-m-selected="false" data-index="1" data-cite="ali" class="card carousel__item">
+          <div id="review-2" data-l-selected data-m-selected="false" data-index="1" data-cite="ali"
+            class="card carousel__item">
             <div class="card__avatar">
               <img src="./images/avatar-ali.png" alt="avatar-ali">
             </div>
@@ -117,7 +123,8 @@
                 cross-channel confusion and everyone is much more focused"</blockquote>
             </div>
           </div>
-          <div id="review-3" data-m-selected="false" data-index="2" data-cite="watts" class="card carousel__item">
+          <div id="review-3" data-l-selected data-m-selected="false" data-index="2" data-cite="watts"
+            class="card carousel__item">
             <div class="card__avatar">
               <img src="./images/avatar-richard.png" alt="avatar-richard">
             </div>
@@ -127,7 +134,8 @@
                 and focused. I can't stop recommending them to everyone I talk to!"</blockquote>
             </div>
           </div>
-          <div id="review-4" data-m-selected="false" data-index="3" data-cite="shanai" class="card carousel__item">
+          <div id="review-4" data-l-selected data-m-selected="false" data-index="3" data-cite="shanai"
+            class="card carousel__item">
             <div class="card__avatar">
               <img src="./images/avatar-shanai.png" alt="avatar-shanai">
             </div>
@@ -161,8 +169,11 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <form class="footer__form form">
-        <input class="form__input" type="text" aria-label="Email input" placeholder="Updates in your inbox..."
-          name="email">
+        <div class="form__error-wrapper">
+          <input class="form__input" type="text" aria-label="Email input" placeholder="Updates in your inbox..."
+            name="email">
+          <p class="form__error-msg">Please insert a valid email</p>
+        </div>
         <button class="form__btn" type="button"><span>Go</span></button>
       </form>
 
@@ -204,7 +215,7 @@
       <p class="footer__text">Copyright 2020. All Rights Reserved</p>
     </div>
   </footer>
-  <script src="./index.js" defer></script>
+  <script src="./index.js" type="module" defer></script>
 </body>
 
 </html>

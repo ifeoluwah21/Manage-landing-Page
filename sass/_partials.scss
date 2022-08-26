@@ -30,3 +30,12 @@ $very-light-gray: hsl(0, 0%, 98%);
     filter: opacity(1);
   }
 }
+
+@keyframes navSlideIn {
+  0% {
+    margin-right: -100%;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
